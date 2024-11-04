@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.exemplo.curso1.controller.EditarJogadorController">
+    <children>
+        <TableView fx:id="tabelaPersonagens" layoutX="14.0" layoutY="20.0" prefHeight="360.0" prefWidth="230.0">
+            <columns>
+                <TableColumn fx:id="colNome" prefWidth="105.0" text="Nome" />
+                <TableColumn fx:id="colClasse" prefWidth="73.0" text="Classe" />
+                <TableColumn fx:id="colNivel" prefWidth="51.0" text="Nível" />
+            </columns>
+        </TableView>
+        <TextField fx:id="campoNome" layoutX="273.0" layoutY="108.0" promptText="Nome" />
+        <TextField fx:id="campoNivel" layoutX="273.0" layoutY="148.0" promptText="Nível" />
+        <TextField fx:id="campoMana" layoutX="273.0" layoutY="188.0" promptText="Pts. Mana" />
+        <TextField fx:id="campoVida" layoutX="273.0" layoutY="228.0" promptText="Pts. Vida" />
+        <TextField fx:id="campoClasse" layoutX="273.0" layoutY="268.0" promptText="Classe" />
+        <Button fx:id="salvarButton" layoutX="422.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleSaveButton" text="Salvar" />
+        <Button fx:id="excluirButton" layoutX="348.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleExcluirButton" text="Excluir" />
+    </children>
+</AnchorPane>
